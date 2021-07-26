@@ -1,0 +1,20 @@
+{
+  "name": "ant-template",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "snowpack dev",
+    "build": "snowpack build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yanik Ammann (confused@ant.lgbt)",
+  "license": "MIT",
+  "dependencies": {
+    "@snowpack/plugin-postcss": "^1.2.2",
+    "@snowpack/plugin-sass": "^1.4.0",
+    "dateformat": "^4.5.1",
+    "snowpack": "^3.3.7",
+    "snowpack-plugin-sass": "^1.0.2"
+  }
+}

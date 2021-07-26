@@ -1,0 +1,51 @@
+{
+    "backdrop": "https://cdn.pixabay.com/photo/2019/10/15/10/50/alpine-4551338_1280.jpg",
+    "name": "Yanik",
+    "links": [
+        {
+            "name": "Assistant",
+            "icon": "home-assistant",
+            "link": "https://home.any.gay/lovelace/default_view"
+        },
+        {
+            "name": "Hera",
+            "icon": "nas",
+            "link": "http://192.168.1.11/ui/"
+        },
+        {
+            "name": "Portainer",
+            "icon": "docker",
+            "link": "http://192.168.1.13:9000/#!/auth"
+        },
+        {
+            "name": "Nginx",
+            "icon": "server-security",
+            "link": "http://192.168.1.13:81/login"
+        },
+        {
+            "name": "Wireguard",
+            "icon": "vpn",
+            "link": "http://192.168.1.13:51821/"
+        },
+        {
+            "name": "YouTube",
+            "icon": "youtube",
+            "link": "https://www.youtube.com/feed/subscriptions"
+        },
+        {
+            "name": "Plex",
+            "icon": "plex",
+            "link": "https://app.plex.tv/"
+        },
+        {
+            "name": "Gitlab",
+            "icon": "gitlab",
+            "link": "https://gitlab.com"
+        },
+        {
+            "name": "Jrnl",
+            "icon": "notebook",
+            "link": "https://projects.ant.lgbt/jrnl/"
+        }
+    ]
+}

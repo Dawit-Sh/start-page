@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+$cardBorderRadius: 20px;
+
+:root {
+    --dark-0: #fafafa;
+    --dark-1: #fff;
+
+    --light-0: #2e3440;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --dark-0: #282828;
+        --dark-1: #353535;
+
+        --light-0: #e8eef2;
+    }
+
+    #card div:first-child div#timeBackground span {
+        color: unset !important
+    }
+}
+
+body {
+    background: var(--dark-0);
+    font-family: 'Roboto', sans-serif;
+
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body, a {
+    color: var(--light-0);
+}
+
+#card {
+    height: 400px;
+    width: 800px;
+
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    background: var(--dark-1);
+    border-radius: $cardBorderRadius;
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.15);
+
+    div:first-child {
+        background-position: center;
+        background-size: cover;
+        border-radius: $cardBorderRadius 0 0 $cardBorderRadius;
+
+        div#timeBackground {
+            $wallpaperBoxPadding: 15px;
+
+            width: calc(100% - 2 * #{$wallpaperBoxPadding});
+            height: calc(100% - 2 * #{$wallpaperBoxPadding});
+            
+            display: flex;
+            padding: $wallpaperBoxPadding;
+            background: linear-gradient( rgba(0, 0, 0, 0.7),  rgba(0, 0, 0, 0.7) );
+            
+            span {
+                font-size: 3rem;
+                font-weight: 300;
+
+                color: var(--dark-1)
+            }
+        }
+    }
+
+    div:last-child {
+        #header {
+            margin: 30px;
+
+            display: grid;
+            gap: 7px;
+
+            span#title {
+                font-size: 2rem;
+            }
+
+            span#subtitle {
+                font-size: 1.5rem;
+                filter: brightness(0.8);
+            }
+        }
+
+        #buttons {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 50px);
+            gap: 3px;
+
+            font-size: 1.05rem;
+            filter: opacity(0.9);
+            
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a {
+                    text-decoration: none;
+
+                    width: 6em;
+
+                    &:hover { transform: scale(1.03) }
+                }
+            }
+        }
+    }
+}
